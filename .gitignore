@@ -1,0 +1,68 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.env
+*.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+*.tok
+secrets.json
+secrets.yaml
+secrets.yml
+*.secrets
+credentials/
+auth/
+.streamlit/secrets.toml
+
+# Python virtual environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local runtime / editor files
+.tmp/
+.streamlit/
+.vscode/
+.idea/
+
+# Large/local artifacts
+*.log
+*.sqlite3
+*.db
+
+# Large model files and downloaded artifacts
+models/hf/**
+models/artifacts/**
+!models/artifacts/.gitkeep
+!models/hf/.gitkeep
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
+*.npz
+*.npy
+
+# Large dataset files and raw corpora
+data/lesicin_raw/**
+data/*.jsonl
+data/*.json
+*.csv
+*.parquet
+*.arrow
